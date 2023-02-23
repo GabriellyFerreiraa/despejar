@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DESPEJAR</title>
+    <link rel="stylesheet" href="./css/estilos.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>     
+    <header>
+        <nav>
+            <div class="logo">
+               <a href="index.html">DESPEJAR</a>
+            </div>
+   
+            <ul class="menu-desktop">
+                <li><a href="./pages/inicio.html">Inicio</a></li>
+                <li><a href="./pages/sobre.html">Sobre</a></li>
+                <li><a href="./pages/precios.html">Precios</a></li>
+                <li><a href="./pages/servicios.html">Servicios</a></li>
+                <li><a href="./pages/contactanos.html">Contactanos</a></li>
+            </ul>
+            <ul class="menu-mobile">
+               <div class="icon-close">
+                   <i class="fa fa-times" aria-hidden="true"></i>
+               </div>
+               <li><a href="./pages/inicio.html">Inicio</li>
+               <li><a href="./pages/sobre.html">Sobre</a></li>
+               <li><a href="./pages/precios.html">Precios</a></li>
+               <li><a href="./pages/servicios.html">Servicios</a></li>
+               <li><a href="./pages/contactanos.html">Contactanos</a></li>
+            </ul>
+            <div class="menu-icon">
+               <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>           
+       </nav>
+    </header>
+    <section class="banner">
+        <div class="texto">
+            <h1 class="titulo">Sacate unos dias de vacaciones</h1>
+            <h2 class="subTitulo">Con los mejores precios y servicios</h2>
+            <div class="botones">
+                <button class="overlay"><a href="./pages/inicio.html">Ver más</a></button>
+           </div>
+        </div>        
+    </section>
+
+    <script>
+        var menuIcon = document.querySelector('.menu-icon');
+        var menuMobile = document.querySelector('.menu-mobile');
+        var iconClose = document.querySelector('.menu-mobile .icon-close');
+
+        menuIcon.addEventListener('click' , function(){
+            menuMobile.classList.add('active');
+        });
+        iconClose.addEventListener('click' , function(){
+            menuMobile.classList.remove('active');
+        });
+    </script>
+</body>
+</html>
