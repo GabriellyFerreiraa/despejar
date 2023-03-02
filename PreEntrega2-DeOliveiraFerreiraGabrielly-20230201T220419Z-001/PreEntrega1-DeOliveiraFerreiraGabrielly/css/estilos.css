@@ -99,17 +99,19 @@ nav li a:hover{
 /*-------inicio-------------*/
 
 #image-new-york{
-    background-image: url(https://www.history.com/.image/ar_4:3%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTkyNDQ5NzY0ODY2OTI1OTgw/gettyimages-1395722285.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 290px;
-}
-
-#image-paris{
-    background-image: url(https://media.traveler.es/photos/61376b0232d932c80fcb8d00/master/w_1600%2Cc_limit/144336.jpg);
+    background-image: url(https://images.pexels.com/photos/14426200/pexels-photo-14426200.jpeg?auto=compress&cs=tinysrgb&w=600);
     background-size: contain;
     background-repeat: no-repeat;
     height: 350px;
+    background-position: center;
+}
+
+#image-paris{
+    background-image: url(https://images.pexels.com/photos/2363/france-landmark-lights-night.jpg?auto=compress&cs=tinysrgb&w=600);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 350px;
+    background-position: center;
 }
 
 #image-riodejaneiro{
@@ -117,6 +119,7 @@ nav li a:hover{
     background-size: contain;
     background-repeat: no-repeat;
     height: 350px;
+    background-position: center;
 }
 
 #image-tokio{
@@ -124,6 +127,63 @@ nav li a:hover{
     background-size: contain;
     background-repeat: no-repeat;
     height: 350px;
+    background-position: center;
+}
+#image-santiago{
+    background-image: url(https://images.pexels.com/photos/2017747/pexels-photo-2017747.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 350px;
+    background-position: center;
+}
+#image-amsterdam{
+    background-image: url(https://images.pexels.com/photos/2366108/pexels-photo-2366108.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 350px;
+    background-position: center;
+}
+#image-cancun{
+    background-image: url(https://images.pexels.com/photos/9482125/pexels-photo-9482125.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 350px;
+    background-position: center;
+}
+#image-madrid{
+    background-image: url(https://images.pexels.com/photos/3757144/pexels-photo-3757144.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 350px;
+    background-position: center;
+}
+#image-roma{
+    background-image: url(https://images.pexels.com/photos/2678456/pexels-photo-2678456.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 350px;
+    background-position: center;
+}
+#image-miami{
+    background-image: url(https://images.pexels.com/photos/4366062/pexels-photo-4366062.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 350px;
+    background-position: center;
+}
+#image-machupicchu{
+    background-image: url(https://images.pexels.com/photos/2356045/pexels-photo-2356045.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 350px;
+    background-position: center;
+}
+#image-elcairo{
+    background-image: url(https://images.pexels.com/photos/4356144/pexels-photo-4356144.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 350px;
+    background-position: center;
 }
 @keyframes vibrar {
     0%{
