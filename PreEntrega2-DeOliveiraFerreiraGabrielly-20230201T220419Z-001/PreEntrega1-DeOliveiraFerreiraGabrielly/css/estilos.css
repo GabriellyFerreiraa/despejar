@@ -454,62 +454,7 @@ nav li a:hover{
        background-color: #92b892;
     }
     /*-----inicio-----*/
-    .new-york-city{
-        width: 350px;
-        height: 900px;
-        display: inline-block;
-        margin: 3rem;
-        padding: 2.3rem;
-        border: 2px solid black;
-    }
-    #image-new-york{
-        background-image: url(https://www.history.com/.image/ar_4:3%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTkyNDQ5NzY0ODY2OTI1OTgw/gettyimages-1395722285.jpg);
-        background-size: contain;
-        background-repeat: no-repeat;
-        height: 250px;
-    }
-    .paris-city{
-        width: 350px;
-        height: 500px;
-        display: inline-block;
-        margin: 3rem;
-        padding: 2.3rem;
-        border: 2px solid black;
-    }
-    #image-paris{
-        background-image: url(https://media.traveler.es/photos/61376b0232d932c80fcb8d00/master/w_1600%2Cc_limit/144336.jpg);
-        background-size: contain;
-        background-repeat: no-repeat;
-        height: 250px;
-    }
-    .riodejaneiro-city{
-        width: 350px;
-        height: 660px;
-        display: inline-block;
-        margin: 3rem;
-        padding: 2.3rem;
-        border: 2px solid black;
-    }
-    #image-riodejaneiro{
-        background-image: url(https://images.pexels.com/photos/351283/pexels-photo-351283.jpeg?auto=compress&cs=tinysrgb&w=1600);
-        background-size: contain;
-        background-repeat: no-repeat;
-        height: 250px;
-    }
-    .tokio-city{
-        width: 350px;
-        height: 550px;
-        display: inline-block;
-        margin: 3rem;
-        padding: 2.3rem;
-        border: 2px solid black;
-    }
-    #image-tokio{
-        background-image: url(https://images.pexels.com/photos/1510595/pexels-photo-1510595.jpeg?auto=compress&cs=tinysrgb&w=1600);
-        background-size: contain;
-        background-repeat: no-repeat;
-        height: 250px;
-    }
+    
 }
 
 
