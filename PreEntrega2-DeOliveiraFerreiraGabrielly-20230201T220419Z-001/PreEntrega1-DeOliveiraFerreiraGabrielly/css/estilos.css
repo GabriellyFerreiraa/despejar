@@ -357,7 +357,7 @@ nav li a:hover{
         margin: auto;
         margin-bottom: 30px;
         width: 350px;
-        height: 470px;
+        height: 550px;
         padding: .8em;
         background: #f5f5f5;
         overflow: visible;
@@ -494,14 +494,28 @@ button[type="submit"] {
     cursor: pointer;
     font-size: 1.2rem;
 }
-.sobre-nosotros{
-    font-size: 16px;
+.sobre-container {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    width: 95%;
+    margin: 0 auto;
+    text-align: left;
     line-height: 1.5;
-    text-align: justify;
-    padding: 20px;
-    border: 1px solid lightgray;
-    border-radius: 10px;
-    background-color: whitesmoke;
+    margin-top: 1rem;
+  }
+  
+#img-sobre {
+    background-image: url(https://rcrcontabilidade.pt/wp-content/uploads/2022/02/Como-abrir-uma-Agencia-de-Viagens.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 350px;
+    width: 50%; 
+    background-position: left;
+}
+  
+.sobre-nosotros {
+    width: 45%; 
 }
 
 footer {
