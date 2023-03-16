@@ -4,100 +4,430 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family:'Poppins', sans-serif;
 }
-
-nav {
-    background-color: black;
-    padding: 10px 60px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+body{
+    background-color: white;
 }
-
-nav .logo a{
+section,
+footer{
+    padding: 54px 0;
+}
+h3{
+    font-size: 50px;    
+}
+p{
+    color: black;
+}
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.container-nav{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.container .logo .imglogo{
+    height: 70px;
+}
+.container a{
+    outline: none;
     text-decoration: none;
+}
+.btn{
+    background-color: black;
     color: #fff;
-    font-size: 35px;
-    font-weight: 600;
+    padding: 15px 20px;
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.6s;
+    font-weight: 500;
+}
+.btn:hover{
+    background-color: #7ECA9C;
+}
+header{
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: rgb(212, 212, 212);
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
 }
 
 nav ul{
     display: flex;
     align-items: center;
-    list-style: none;
     padding: 10px;
 }
-
-nav li{
-    margin-left: 7px;
-}
-
-nav li a{
-    text-decoration: none;
-    color: #fff;
-    font-size: 18px;
-    font-weight: 500;
-    padding: 8px 15px;
+nav ul a{
+    background-color: transparent;
+    color: black;
+    padding: 15px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 17px;
+    display: inline-block;
+    font-weight: 700;
     border-radius: 5px;
-    transition: 0.3s;
 }
-nav li a:hover{
+nav ul a:hover {
+    letter-spacing: 3px;
+    background-color: black;
+    color: hsl(0, 0%, 100%);
+}
+nav .menu-icon{
+    display: none;
+    color: black;
+    cursor: pointer;
+    font-size: 25px;
+}
+.menu-mobile{
+    background-color: #7ECA9C;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 100%;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 10;
+    transition: 0.4s;
+}
+.menu-mobile.active{
+    left: 0;
+}
+.menu-mobile .icon-close{
+    display: block;
+    position: absolute;
+    top: 46px;
+    right: 18px;
+}
+.banner{
+    display: flex;
+    justify-content: center; 
+    text-align: center; 
+}
+.banner .texto{
+    margin: 150px;
+    padding: 0 90px;
+}
+.banner .texto .titulo{
+    color: #fff;
+    font-size: 50px;
+}
+.banner .texto .subtitulo{
+    color: #fff;
+    font-size: 40px;
+    font-weight: 000;
+}
+#botoncontactos{
     background-color: white;
+    padding: 17px 40px;
+    border-radius: 50px;
+    border: 0;
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 15px;
+    transition: all .5s ease;
+}
+#letraContactanos{
+    text-decoration: none;
+    outline: none;
     color: black;
 }
-
-
-.banner{
-    height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.281),rgba(0,0,0,0.308)),url(../img/backgorund.jpeg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+#botoncontactos:hover{
+    letter-spacing: 3px;
+    background-color: whitesmoke;
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(254, 254, 255) 0px 7px 29px 0px;
+}
+#botoncontactanos:active {
+    letter-spacing: 3px;
+    background-color: white;
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(254, 254, 255) 0px 0px 0px 0px;
+    transform: translateY(10px);
+    transition: 100ms;
+}
+/*servicios*/
+.servicios h3{
     text-align: center;
 }
-
-.texto .titulo{
-    color: #fff;
-    font-size: 60px;
-    font-weight: 000;
+.servicios .container p{
+    text-align: center;
 }
-.texto .subTitulo{
-    color: #fff;
-    font-size: 70px;
-    font-weight: 000;
+.servicios .row-cards{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
 }
-.texto .botones{
-    margin-top: 30px;
+.servicios .row-cards .row-card-item{
+    background-color: #7ECA9C;
+    width: 350px;
+    padding: 20px;
+    border-radius: 14px;
+    margin: 20px;
 }
-.texto .botones button{
-    height: 55px;
-    width: 170px;
-    border-radius: 5px;
-    border: 0;
-    margin: 0 10px;
-    font-size: 20px;
-    font-weight: 500;
-    padding: 0 10px;
-    cursor: pointer;
-    outline: none;
+.servicios .row-cards .row-card-item:hover{
+    background-color: #CCFFBD;
+}
+.servicios .row-cards .row-card-item img{
+    background-color: #40394A;
+    border-radius: 14px;
+    width: 70px;
+    padding: 9px;
+}
+.datos{
+    background-color: #CCFFBD;
+}
+.datos .container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.datos .datos-item{
+    text-align: center;
+    margin: 15px;
+    color: #40394A;
+}
+.datos .datos-item img{
+    background-color: #7ECA9C;
+    border-radius: 14px;
+    padding: 10px;
+    margin-bottom: 15px;
+    width: 80px;
+}
+.datos .datos-item p{
+    font-size: 18px;
+}
+.datos .datos-item p strong{
+    font-size: 28px;
+}
+/*sobre nosotros*/
+.sobre .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+}
+.sobre .sobre-text{
+    width: 50%;
+    padding-right: 40px;
+}
+.sobre .sobre-text p{
+    margin: 18px 0;
+    color: black;
+}
+.sobre .sobre-img{
+    width: 50%;
+}
+.sobre .sobre-img img{
+    width: 100%;
+    border-radius: 10px;
+}
+/*contactanos*/
+header .banner h1{
+    font-size: 50px;
+}
+form {
+    width: 50%;
+    margin: 0 auto;
+    padding: 2rem;
+}
+.form-group {
+    margin-bottom: 1rem;
+}
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+input, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    border-radius: 9px;
     transition: 0.3s;
+    border: 1px solid #40394A;
+}
+input:focus, textarea:focus{
+    border: 1px solid #7ECA9C;
+}
+textarea {
+    height: 8rem;
+    resize: none;
+}
+.contacto-info form button{
+    border: none;
+}
+.contacto-info{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    padding: 30px;
+}
+.contacto-info .contacto-despejar{
+    width: 50%;
+    padding: 30px;
+    background-color: #7ECA9C;
+    margin-right: 50px;
+    border-radius: 14px;
+    height: fit-content;
+}
+.contacto-info .contacto-despejar div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}    
+.contacto-info .contacto-despejar i{
+    font-size: 24px;
+    margin-right: 20px;
+    color: white;
+}
+.contacto-info .contacto-despejar p{
+    font-size: 17px;
+    color: #40394A;
+}
+/*inicio*/
+.mas-info .container{
+    display: flex;
+    align-items: center;
+    padding: 50px;
+}
+.mas-info .container .mas-info-texto{
+    width: 50%;
+    padding: 0 40px;
+}
+.mas-info .container .mas-info-texto h3{
+    font-size: 56px;
+}
+.mas-info .container .mas-info-texto p{
+    margin: 5px 0 10px 0;
+}
+.mas-info .container .mas-info-img{
+    width: 50%;
+}
+.mas-info .container .mas-info-img .img-info{
+    width: 500px;
+}
+.container-text-center{
+    padding: 50px;
+}
+.comentarios h3{
+    text-align: center;
+}
+.comentarios p{
+    margin-bottom: 20px;
+    text-align: center;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.comentarios .card-item{
+    background-color: #CCFFBD;
+    margin: 15px;
+    border-radius: 14px;
+    text-align: center;
+    width: 350px;
+    transition: 0.7s;
+}
+.comentarios .card-item img{
+    border-radius: 100px;
+    width: 80px;
+    display: block;
+    margin: 20px auto;    
+}
+.comentarios .card-item .nombre-user{
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.comentarios .card-item .comentario-user{
+    font-size: 15px;
+    padding: 0 15px;
+}
+.comentarios .card-item .star-rating{
+    margin: 15px;
+    border-top: 2px;
+}
+.comentarios .card-item:hover{
+    background-color: rgb(49, 49, 49);
+    margin-top: -5px;
+} 
+.comentarios .card-item:hover .nombre-user,
+.comentarios .card-item:hover .comentario-user,
+.comentarios .card-item:hover .star-rating{
+    color: white;
+}
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+.search-container input[type="text"] {
+    width: 800px;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px black;
+    font-size: 16px;
+    outline: none;
+}
+.search-container input[type="text"]::placeholder {
+    color: black;
+}
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
 }
 
-.texto .botones button.overlay{
-    background: white;
-    color: black;
-    animation: vibrar 0.5s ease-in-out both;
+.search-container input[type="text"] {
+    width: 100%;
+    max-width: 800px;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px black;
+    font-size: 16px;
+    outline: none;
 }
-.texto .botones button.overlay a{
-    text-decoration: none;
-    color: black;
-}
-/*-------inicio-------------*/
 
+.search-container input[type="text"]::placeholder {
+    color: black;
+}
+@media only screen and (max-width: 768px) {
+    .search-container {
+        padding: 1rem;
+    }
+    
+    .search-container input[type="text"] {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .search-container {
+        padding: 0.5rem;
+    }
+    
+    .search-container input[type="text"] {
+        font-size: 12px;
+    }
+}
 #image-new-york{
     background-image: url(https://images.pexels.com/photos/14426200/pexels-photo-14426200.jpeg?auto=compress&cs=tinysrgb&w=600);
     background-size: contain;
@@ -185,116 +515,7 @@ nav li a:hover{
     height: 350px;
     background-position: center;
 }
-@keyframes vibrar {
-    0%{
-        transform: scale(1);
-    }
-    50%{
-        transform: scale(1.1);
-    }
-    100%{
-        transform: scale(1);
-    }
-    
-}
-.menu-icon{
-    display: none;
-    color: white;
-    cursor: pointer;
-}
-.menu-mobile{
-    background-color: black;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    left: 100%;
-    bottom: 0;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    z-index: 10;
-    transition: 0.4s;
-}
-.menu-mobile.active{
-    left: 0;
-}
-.menu-mobile .icon-close{
-    position: absolute;
-    top: 40px;
-    right: 40px;
-    color: white;
-    cursor: pointer;
-    font-size: 30px;
-}
-.card {
-    position: relative;
-    top: 30px;
-    margin: auto;
-    margin-bottom: 30px;
-    width: 800px;
-    height: 354px;
-    padding: .8em;
-    background: #f5f5f5;
-    overflow: visible;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-   }
-   
-   .card-img-italy {
-    background-image: url(https://images.pexels.com/photos/1701595/pexels-photo-1701595.jpeg?auto=compress&cs=tinysrgb&w=1600);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 60%;
-    width: 30%;
-    border-radius: .5rem;
-    transition: .3s ease;
-    float: left;
-   }
-   .card-img-miami {
-    background-image: url(https://images.pexels.com/photos/4019766/pexels-photo-4019766.jpeg?auto=compress&cs=tinysrgb&w=1600);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 60%;
-    width: 30%;
-    border-radius: .5rem;
-    transition: .3s ease;
-    float: left;
-   }
-   .card-img-patagonia {
-    background-image: url(https://images.pexels.com/photos/13171281/pexels-photo-13171281.jpeg?auto=compress&cs=tinysrgb&w=1600);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 60%;
-    width: 30%;
-    border-radius: .5rem;
-    transition: .3s ease;
-    float: left;
-   }
-   .card-img-medellin {
-    background-image: url(https://images.pexels.com/photos/13359828/pexels-photo-13359828.jpeg?auto=compress&cs=tinysrgb&w=1600);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 60%;
-    width: 30%;
-    border-radius: .5rem;
-    transition: .3s ease;
-    float: left;
-   }
-   
-   .card-info {
-    padding-top: 3%;
-    clear: both;
-   }
-   
-   svg {
-    width: 20px;
-    height: 20px;
-   }
-   
-   .card-footer {
+.card-precio {
     width: 100%;
     display: flex;
     justify-content: flex-end;
@@ -302,38 +523,83 @@ nav li a:hover{
     padding-top: 10px;
     border-top: 1px solid #ddd;
     clear: both;
-   }
-   
-   .info-ciudad {
-    float: right;
-    width: 65%;
-   }
-   /*Button*/
-   .card-button {
-    border: 1px solid #252525;
-    display: flex;
-    padding: .3em;
+    padding: 20px;
+}
+.card-precio .text-title{
+    padding: 12px;
+    font-size: 20px;
+}
+.container-text-center h2{
+    padding: 5px;
+}
+.star-rating{
+    padding: 10px;
+}
+#comprar{
     cursor: pointer;
-    border-radius: 50px;
-    transition: .3s ease-in-out;
-   }
-   
-   /*Hover*/
-   .card-img:hover {
-    transform: translateY(-25%);
-    box-shadow: rgba(226, 196, 63, 0.25) 0px 13px 47px -5px, rgba(180, 71, 71, 0.3) 0px 8px 16px -8px;
-   }
-   
-   .card-button:hover {
-    border: 1px solid black;
-    background-color: #92b892;
-   }
-
+    font-weight: 700;
+    font-family: Helvetica,"sans-serif";
+    transition: all .2s;
+    padding: 10px 20px;
+    border-radius: 100px;
+    background: whitesmoke;
+    border: 1px solid #40394A;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+  
+#comprar:hover {
+    background: #7ECA9C;
+}
+  
+#comprar > svg {
+    width: 34px;
+    margin-left: 10px;
+    transition: transform .3s ease-in-out;
+}
+  
+#comprar:hover svg {
+    transform: translateX(5px);
+}
+  
+#comprar:active {
+    transform: scale(0.95);
+}
+/*footer*/
+footer {
+    background-color: black;
+    text-align: center;
+}
+.footer .social-icons a{
+    color: black;
+    font-size: 19px;
+    background-color: white;
+    padding: 10px;
+    margin: 3px;
+    border-radius: 10px;
+}
+.footer p{
+    margin-top: 10px;
+    color: white;
+    padding: 10px;
+}
 @media (max-width: 900px) {
     .menu-desktop{
         display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
     }
-    .menu-icon{
+    .menu-desktop a{
+        margin: 10px 0;
+        font-size: 16px;
+    }
+    nav .menu-icon{
         display: block;
         font-size: 30px;
         border-radius: 5px;
@@ -350,199 +616,59 @@ nav li a:hover{
     .texto .subTitulo{
         font-size: 55px;
     }
-    /*precios*/
-    .card {
-        position: relative;
-        top: 30px;
-        margin: auto;
-        margin-bottom: 30px;
-        width: 350px;
-        height: 550px;
-        padding: .8em;
-        background: #f5f5f5;
-        overflow: visible;
-        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    /*inicio*/
+    .mas-info .container{
+        flex-direction: column;
     }
-       
-    .card-img-italy {
-        background-image: url(https://images.pexels.com/photos/1701595/pexels-photo-1701595.jpeg?auto=compress&cs=tinysrgb&w=1600);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        height: 30%;
-        width: 30%;
-        border-radius: .5rem;
-        transition: .3s ease;
-        float: left;
+    .mas-info .container .mas-info-texto{
+        margin-top: 10px;
+        padding: 0 20px;
+        order: 1;
     }
-    .card-img-miami {
-        background-image: url(https://images.pexels.com/photos/4019766/pexels-photo-4019766.jpeg?auto=compress&cs=tinysrgb&w=1600);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        height: 30%;
-        width: 30%;
-        border-radius: .5rem;
-        transition: .3s ease;
-        float: left;
+    .mas-info .mas-info-texto h3{
+        font-size: 48px;
     }
-    .card-img-patagonia {
-        background-image: url(https://images.pexels.com/photos/13171281/pexels-photo-13171281.jpeg?auto=compress&cs=tinysrgb&w=1600);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        height: 30%;
-        width: 30%;
-        border-radius: .5rem;
-        transition: .3s ease;
-        float: left;
+    .mas-info .container .mas-info-img .img-info{
+        width: 300px;
     }
-    .card-img-medellin {
-        background-image: url(https://images.pexels.com/photos/13359828/pexels-photo-13359828.jpeg?auto=compress&cs=tinysrgb&w=1600);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        height: 30%;
-        width: 30%;
-        border-radius: .5rem;
-        transition: .3s ease;
-        float: left;
-    }
-       
-    .card-info {
-        padding-top: 3%;
-        clear: both;
-    }
-       
-    svg {
-        width: 20px;
-        height: 20px;
-    }
-       
-    .card-footer {
+    .mas-info .mas-info-texto,
+    .mas-info .mas-info-img{
         width: 100%;
-        display: flex;
-        justify-content: flex-end;
-        align-items: flex-end;
-        padding-top: 10px;
-        border-top: 1px solid #ddd;
-        clear: both;
     }
-       
-    .info-ciudad {
-        float: right;
-        width: 65%;
+    .banner .texto{
+        padding: 0;
+        margin: 80px;
     }
-       /*Button*/
-    .card-button {
-       border: 1px solid #252525;
-       display: flex;
-       padding: .3em;
-       cursor: pointer;
-       border-radius: 50px;
-       transition: .3s ease-in-out;
+    .banner .texto h1{
+        font-size: 80px;
     }
-   
-      /*Hover*/
-    .card-img:hover {
-       transform: translateY(-25%);
-       box-shadow: rgba(226, 196, 63, 0.25) 0px 13px 47px -5px, rgba(180, 71, 71, 0.3) 0px 8px 16px -8px;
+    .banner .texto p{
+        font-size: 15px;
     }
-   
-    .card-button:hover {
-       border: 1px solid black;
-       background-color: #92b892;
+    .comentarios .card-item{
+        width: 100%;
     }
-    /*-----inicio-----*/
-    
-}
-
-
-/*-------contactanos-----------*/
-form {
-    width: 50%;
-    margin: 0 auto;
-    padding: 2rem;
-}
-
-.form-group {
-    margin-bottom: 1rem;
-}
-
-label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-}
-
-input, textarea {
-    width: 100%;
-    padding: 0.5rem;
-    font-size: 1.2rem;
-}
-
-textarea {
-    height: 8rem;
-}
-
-button[type="submit"] {
-    background-color: black;
-    color: #fff;
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: 0.25rem;
-    cursor: pointer;
-    font-size: 1.2rem;
-}
-.sobre-container {
-    display: flex;
-    align-items: center; 
-    justify-content: space-between; 
-    width: 95%;
-    margin: 0 auto;
-    text-align: left;
-    line-height: 1.5;
-    margin-top: 1rem;
-  }
-  
-#img-sobre {
-    background-image: url(https://rcrcontabilidade.pt/wp-content/uploads/2022/02/Como-abrir-uma-Agencia-de-Viagens.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 350px;
-    width: 50%; 
-    background-position: left;
-}
-  
-.sobre-nosotros {
-    width: 45%; 
-}
-
-footer {
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    background-color: black;
-    color: #fff;
-    position: fixed;
-}
-
-.social-icons {
-    display: flex;
-}
-
-.social-icons a {
-    display: inline-block;
-    margin-right: 0.5rem;
-    color: #fff;
-    font-size: 1.5rem;
-    transition: transform 0.2s;
-}
-
-.social-icons a:hover {
-    transform: scale(1.2);
+    /*sobre*/
+    .sobre .container{
+        flex-direction: column;
+    }
+    .sobre .sobre-img,
+    .sobre .sobre-text{
+        width: 100%;
+    }
+    .sobre .sobre-text{
+        margin-top: 40px;
+        padding: 10px;
+    }
+    /*contactanos*/
+    .contacto .contacto-info{
+        flex-direction: column-reverse;
+    }
+    .contacto-info .derecho,
+    .contacto-info .izquierdo{
+        width: 100%;
+    }
+    .contacto-info .derecho{
+        margin-bottom: 30px;
+    }
 }

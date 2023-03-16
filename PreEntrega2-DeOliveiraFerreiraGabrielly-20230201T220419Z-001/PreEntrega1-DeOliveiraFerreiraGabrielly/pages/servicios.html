@@ -1,120 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DESPEJAR</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/estilos.css"> 
+    <title>Servicios | Despejar</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/estilos.css">
 </head>
+
 <body>
+
     <header>
-        <nav>
-            <div class="logo">
-               <a href="../index.html">DESPEJAR</a>
-            </div>
-   
-            <ul class="menu-desktop">
-                <li><a href="./inicio.html">Inicio</a></li>
-                <li><a href="./sobre.html">Sobre</a></li>
-                <li><a href="./precios.html">Precios</a></li>
-                <li><a href="./servicios.html">Servicios</a></li>
-                <li><a href="./contactanos.html">Contactanos</a></li>
-            </ul>
-            <ul class="menu-mobile">
-               <div class="icon-close">
-                   <i class="fa fa-times" aria-hidden="true"></i>
-               </div>
-                <li><a href="./inicio.html">Inicio</a></li>
-                <li><a href="./sobre.html">Sobre</a></li>
-                <li><a href="./precios.html">Precios</a></li>
-                <li><a href="./servicios.html">Servicios</a></li>
-                <li><a href="./contactanos.html">Contactanos</a></li>
-            </ul>
-            <div class="menu-icon">
-               <i class="fa fa-bars" aria-hidden="true"></i>
-            </div>
-            
-       </nav>
+        <div class="container">
+            <nav>
+                <a class="logo" href="../index.html">
+                    <img class="imglogo" src="../img/LOGO.png" alt="Logo"></a>
+                <ul class="menu-desktop">
+                    <a href="../index.html">Inicio</a>
+                    <a href="./precios.html">Precios</a>
+                    <a href="./servicios.html">Servicios</a>
+                    <a href="./sobre.html">Sobre</a>
+                    <a class="btn" href="./contactanos.html">Contactanos</a>
+                </ul>
+                <ul class="menu-mobile">
+                    <a href="../index.html">Inicio</a>
+                    <a href="./precios.html">Precios</a>
+                    <a href="./servicios.html">Servicios</a>
+                    <a href="./sobre.html">Sobre</a>
+                    <a class="btn" href="./contactanos.html">Contactanos</a>
+                    <div class="icon-close">
+                        <i class="fa fa-times-circle" aria-hidden="true"></i>
+                    </div>
+                </ul>
+                <div class="menu-icon">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+            </nav>
+            </nav>
+        </div>
     </header>
     <main>
-        <div class="row justify-content-md-center">
-            <div class="col-sm-6 mb-3 mb-sm-0">
-              <div class="card text-center mb-4" style="height: 180px; width: 600px">
-                <div class="card-body">
-                  <img
-                    src="https://diegodealmagrohoteles.cl/imagenes/iconoCategoria/homeN.svg"
-                    class="img-thumbnail"
-                    style="width: 50px; height: 50px"
-                    alt="">
-                  <div>
-                    <h2 class="card-title">Alojamentos</h2>
-                    <a href="#" class="btn btn-dark">Ver más</a>
-                  </div>
+        <section class="servicios">
+            <div class="container">
+                <h3>Nuestros servicios</h3>
+                <div class="row-cards">
+                    <div class="row-card-item">
+                        <img src="../img/cloud.png" alt="">
+                        <p nombre-servicio><strong>Planificación de itinerarios personalizados</strong></p>
+                        <p class="descripcion">Nuestra agencia de viajes puede crear itinerarios personalizados
+                            adaptados a sus intereses, preferencias y presupuesto únicos. Ya sea que esté buscando
+                            aventuras, relajación o experiencias culturales, trabajaremos con usted para diseñar un plan
+                            de viaje que satisfaga sus necesidades.</p>
+                    </div>
+                    <div class="row-card-item">
+                        <img src="../img/digital-marketing.png" alt="">
+                        <p nombre-servicio><strong>Arreglos de viajes grupales</strong></p>
+                        <p class="descripcion">ya sea que esté planeando una reunión familiar, un retiro corporativo o
+                            un viaje escolar, podemos manejar toda la logística para viajes grupales. Coordinaremos el
+                            transporte, el alojamiento y las actividades para que puedas concentrarte en disfrutar la
+                            experiencia con tu grupo.</p>
+                    </div>
+                    <div class="row-card-item">
+                        <img src="../img/seo.png" alt="">
+                        <p nombre-servicio><strong>Seguro de viaje</strong></p>
+                        <p class="descripcion">Proteja su inversión con un seguro de viaje. Ofrecemos una variedad de
+                            opciones, que incluyen seguro de cancelación de viaje, cobertura médica y protección de
+                            equipaje. Nuestros agentes lo ayudarán a encontrar la mejor póliza para satisfacer sus
+                            necesidades.</p>
+                    </div>
+                    <div class="row-card-item">
+                        <img src="../img/virtual_store.png" alt="">
+                        <p nombre-servicio><strong>Reservas de hoteles y resorts</strong></p>
+                        <p class="descripcion">Permítanos ocuparnos de sus necesidades de alojamiento reservando los
+                            mejores hoteles y resorts para usted. Tenemos acceso a una amplia gama de opciones que se
+                            adaptan a todos los presupuestos, desde lujosas propiedades de cinco estrellas hasta
+                            hostales económicos.</p>
+                    </div>
+                    <div class="row-card-item">
+                        <img src="../img/layer.png" alt="">
+                        <p nombre-servicio><strong>Bodas de destino y paquetes de luna de miel</strong></p>
+                        <p class="descripcion">Haga que su día especial sea inolvidable con un destino de boda o paquete
+                            de luna de miel. Podemos ayudarlo a encontrar la ubicación perfecta y ocuparnos de todos los
+                            detalles, incluidos los arreglos de viaje, el alojamiento y las actividades.</p>
+                    </div>
+                    <div class="row-card-item">
+                        <img src="../img/manager.png" alt="">
+                        <p nombre-servicio><strong>Asistencia para visas de viaje y pasaportes</strong></p>
+                        <p class="descripcion">No se deje estresar por la burocracia de las visas de viaje y las
+                            solicitudes de pasaportes. Deje que nuestros expertos lo ayuden a navegar el proceso y se
+                            aseguren de que tiene toda la documentación necesaria para su viaje. Podemos ayudarlo con
+                            las solicitudes de visa, renovaciones de pasaportes y otros trámites relacionados con
+                            viajes.</p>
+                    </div>
                 </div>
-              </div>
             </div>
-            <div class="col-sm-6 mb-3 mb-sm-0">
-              <div class="card text-center mb-4" style="height: 180px; width: 600px">
-                <div class="card-body">
-                  <img
-                    src="https://w7.pngwing.com/pngs/704/221/png-transparent-computer-icons-football-sport-sports-personal-text-hand-sport.png"
-                    class="img-thumbnail"
-                    style="width: 50px; height: 50px"
-                    class="img-fluid"
-                    alt="...">
-                  <h2 class="card-title">Actividades</h2>
-                  <a href="#" class="btn btn-dark">Ver más</a>
+        </section>
+        <section class="datos">
+            <div class="container">
+                <div class="datos-item">
+                    <img src="../img/cloud.png" alt="">
+                    <p>
+                        <strong>+850</strong><br>
+                        Paquetes de viajes
+                    </p>
                 </div>
-              </div>
-            </div>
-            <div class="col-sm-6 mb-3 mb-sm-0">
-              <div class="card text-center mb-4" style="height: 180px; width: 600px">
-                <div class="card-body">
-                  <img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHoeFY6HRYDSshn1nneJ17ZukqynskkUa_2xapKICUhE4OnfxKMBzvL6UbyVCtgLe-oJE&usqp=CAU"
-                    class="img-thumbnail"
-                    style="width: 50px; height: 50px"
-                    class="img-fluid"
-                    alt="...">
-                  <h2 class="card-title">Vuelos</h2>
-                  <a href="#" class="btn btn-dark">Ver más</a>
+                <div class="datos-item">
+                    <img src="../img/manager.png" alt="">
+                    <p>
+                        <strong>+9716</strong><br>
+                        Clientes satisfechos
+                    </p>
                 </div>
-              </div>
-            </div>
-            <div class="col-sm-6 mb-3 mb-sm-0">
-              <div class="card text-center mb-4" style="height: 180px; width: 600px">
-                <div class="card-body">
-                  <img
-                    src="https://cdn-icons-png.flaticon.com/512/39/39887.png"
-                    class="img-thumbnail"
-                    class="img-fluid"
-                    style="width: 50px; height: 50px"
-                    alt="...">
-                  <h2 class="card-title">Paquetes y descuentos</h2>
-                  <a href="#" class="btn btn-dark">Ver más</a>
+                <div class="datos-item">
+                    <img src="../img/trophy.png" alt="">
+                    <p>
+                        <strong>+231</strong><br>
+                        Premiaciones
+                    </p>
                 </div>
-              </div>
+                <div class="datos-item">
+                    <img src="../img/layer.png" alt="">
+                    <p>
+                        <strong>+598</strong><br>
+                        Planes
+                    </p>
+                </div>
             </div>
-          </div>
-          
+        </section>
+        <footer class="footer">
+            <div class="social-icons">
+                <a href="https://www.facebook.com/"><i class="fa fa-facebook-square"></i></a>
+                <a href="https://twitter.com/"><i class="fa fa-twitter-square"></i></a>
+                <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+            </div>
+            <p>&copy; Despejar 2023</p>
+        </footer>
     </main>
     <script>
         var menuIcon = document.querySelector('.menu-icon');
         var menuMobile = document.querySelector('.menu-mobile');
         var iconClose = document.querySelector('.menu-mobile .icon-close');
 
-        menuIcon.addEventListener('click' , function(){
+        menuIcon.addEventListener('click', function () {
             menuMobile.classList.add('active');
         });
-        iconClose.addEventListener('click' , function(){
+        iconClose.addEventListener('click', function () {
             menuMobile.classList.remove('active');
         });
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" 
-        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" 
-        crossorigin="anonymous"
     </script>
 </body>
+
 </html>

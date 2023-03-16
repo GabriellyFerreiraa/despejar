@@ -1,137 +1,421 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DESPEJAR</title>
-    <link rel="stylesheet" href="../css/estilos.css"> 
+    <title>Precios | Despejar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/estilos.css">
 </head>
+
 <body>
-    <header>
-        <nav>
-            <div class="logo">
-               <a href="../index.html">DESPEJAR</a>
-            </div>
-   
-            <ul class="menu-desktop">
-                <li><a href="./inicio.html">Inicio</a></li>
-                <li><a href="./sobre.html">Sobre</a></li>
-                <li><a href="./precios.html">Precios</a></li>
-                <li><a href="./servicios.html">Servicios</a></li>
-                <li><a href="./contactanos.html">Contactanos</a></li>
-            </ul>
-            <ul class="menu-mobile">
-               <div class="icon-close">
-                   <i class="fa fa-times" aria-hidden="true"></i>
-               </div>
-               <li><a href="./inicio.html">Inicio</a></li>
-                <li><a href="./sobre.html">Sobre</a></li>
-                <li><a href="./precios.html">Precios</a></li>
-                <li><a href="./servicios.html">Servicios</a></li>
-                <li><a href="./contactanos.html">Contactanos</a></li>
-            </ul>
-            <div class="menu-icon">
-               <i class="fa fa-bars" aria-hidden="true"></i>
-            </div>
-            
-       </nav>
+    <header class="hearder-nav">
+        <div class="container">
+            <nav>
+                <a class="logo" href="../index.html">
+                    <img class="imglogo" src="../img/LOGO.png" alt="Logo"></a>
+                <ul class="menu-desktop">
+                    <a href="../index.html">Inicio</a>
+                    <a href="./precios.html">Precios</a>
+                    <a href="./servicios.html">Servicios</a>
+                    <a href="./sobre.html">Sobre</a>
+                    <a class="btn" href="./contactanos.html">Contactanos</a>
+                </ul>
+                <ul class="menu-mobile">
+                    <a href="../index.html">Inicio</a>
+                    <a href="./precios.html">Precios</a>
+                    <a href="./servicios.html">Servicios</a>
+                    <a href="./sobre.html">Sobre</a>
+                    <a class="btn" href="./contactanos.html">Contactanos</a>
+                    <div class="icon-close">
+                        <i class="fa fa-times-circle" aria-hidden="true"></i>
+                    </div>
+                </ul>
+                <div class="menu-icon">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+            </nav>
+            </nav>
+        </div>
     </header>
-    <main>
+    <section>
         <div class="search-container">
-          <form action="/search">
-            <input type="text" placeholder="Buscar">
-          </form>
+            <form action="/search">
+                <input type="text" placeholder="Buscar">
+            </form>
         </div>
-        <div class="card">
-            <div class="card-img-italy"></div>
-            <div class="info-ciudad"><p>Vuela al Aeropuerto Internacional Leonardo da Vinci y comienza tu aventura italiana! Hospédese en el lujoso Hotel Eden Rome, ubicado cerca de la Plaza de España y Villa Borghese.
-              <br> El hotel cuenta con amplias habitaciones, comodidades modernas y un bar en la azotea con una vista impresionante de la ciudad. </p></div>
-            <div class="card-info">
-              <p class="text-title"><b>Roma - Itália</b></p>
-              <p class="text-body">Este paquete incluye vuelo y hospedaje.</p>
-            </div>
-            <div class="card-footer">
-            <span class="text-title">$499.49</span>
-            <div class="card-button">
-              <svg class="svg-icon" viewBox="0 0 20 20">
-                <path d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"></path>
-                <path d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"></path>
-                <path d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"></path>
-              </svg>
-            </div>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-img-miami"></div>
-            <div class="info-ciudad"><p>Vuele al Aeropuerto Internacional de Miami y prepárese para tomar el sol! Hospédese en el icónico Fontainebleau Miami Beach, ubicado en primera línea de playa de Miami Beach.
-              <br> El hotel cuenta con habitaciones de lujo, varias piscinas y una variedad de opciones gastronómicas y de entretenimiento.</p></div>
-            <div class="card-info">
-              <p class="text-title"><b>Miami - Florida</b></p>
-              <p class="text-body">Este paquete incluye vuelo y hospedaje.</p>
-            </div>
-            <div class="card-footer">
-            <span class="text-title">$499.49</span>
-            <div class="card-button">
-              <svg class="svg-icon" viewBox="0 0 20 20">
-                <path d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"></path>
-                <path d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"></path>
-                <path d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"></path>
-              </svg>
-            </div>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-img-patagonia"></div>
-            <div class="info-ciudad"><p>Vuele al Aeropuerto Internacional de El Calafate y prepárese para experimentar la naturaleza salvaje de la Patagonia. Alójate en el encantador Esplendor by Wyndham El Calafate, ubicado cerca del centro de la ciudad.
-              <br> El hotel cuenta con habitaciones acogedoras, impresionantes vistas de la Cordillera de los Andes y un restaurante que sirve cocina tradicional argentina. </p></div>
-            <div class="card-info">
-              <p class="text-title"><b>Patagonia - Argentina</b></p>
-              <p class="text-body">Este paquete incluye vuelo y hospedaje.</p>
-            </div>
-            <div class="card-footer">
-            <span class="text-title">$499.49</span>
-            <div class="card-button">
-              <svg class="svg-icon" viewBox="0 0 20 20">
-                <path d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"></path>
-                <path d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"></path>
-                <path d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"></path>
-              </svg>
-            </div>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-img-medellin"></div>
-            <div class="info-ciudad"><p>Vuele al Aeropuerto Internacional José María Córdova y prepárese para explorar la vibrante ciudad de Medellín.
-              <br> Hospédese en el moderno NH Collection Medellin Royal, ubicado cerca del centro de la ciudad. El hotel cuenta con cómodas habitaciones, una piscina en la azotea y un restaurante de cocina colombiana e internacional.</p></div>
-            <div class="card-info">
-              <p class="text-title"><b>Medellín - Colombia</b></p>
-              <p class="text-body">Este paquete incluye vuelo y hospedaje.</p>
-            </div>
-            <div class="card-footer">
-            <span class="text-title">$499.49</span>
-            <div class="card-button">
-              <svg class="svg-icon" viewBox="0 0 20 20">
-                <path d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"></path>
-                <path d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"></path>
-                <path d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"></path>
-              </svg>
-            </div>
-            </div>
-        </div>
-    </main>
+        <div class="container-text-center">
+            <div class="row">
+                <div class="col-sm-12 col-xl-4">
+                    <div id="image-new-york"></div>
+                    <h2>New York City, USA</h2>
+                    <div class="card-precio">
+                        <span class="text-title">$499.49</span>
+                        <button id="comprar">
+                            <span>comprar</span>
+                            <svg width="34" height="34" viewBox="0 0 74 74" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="37" cy="37" r="35.5" stroke="black" stroke-width="3"></circle>
+                                <path
+                                    d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z"
+                                    fill="black"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <p>La ciudad tiene muchos barrios y edificios reconocidos por todo el mundo. Por ejemplo, la estatua
+                        de
+                        la Libertad, ubicada en la isla homónima, y la Isla de Ellis, que recibió a millones de
+                        inmigrantes
+                        que llegaban a Estados Unidos a finales del siglo XIX y comienzos del XX. </p>
+                    <div class="star-rating">
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-xl-4">
+                    <div id="image-paris"></div>
+                    <h2>Paris, France</h2>
+                    <div class="card-precio">
+                        <span class="text-title">$499.49</span>
+                        <button id="comprar">
+                            <span>comprar</span>
+                            <svg width="34" height="34" viewBox="0 0 74 74" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="37" cy="37" r="35.5" stroke="black" stroke-width="3"></circle>
+                                <path
+                                    d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z"
+                                    fill="black"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <p>París, además de ser un museo al aire libre, ofrece innumerables lugares para visitar y rincones
+                        para
+                        perderse. Te presentamos las visitas imprescindibles en París.</p>
+                    <div class="star-rating">
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-xl-4">
+                    <div id="image-riodejaneiro"></div>
+                    <h2>Rio de Janeiro, Brazil</h2>
+                    <div class="card-precio">
+                        <span class="text-title">$499.49</span>
+                        <button id="comprar">
+                            <span>comprar</span>
+                            <svg width="34" height="34" viewBox="0 0 74 74" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="37" cy="37" r="35.5" stroke="black" stroke-width="3"></circle>
+                                <path
+                                    d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z"
+                                    fill="black"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <p>Río de Janeiro, una de las ciudades más fascinantes de Brasil y del mundo entero. Sus famosas
+                        playas
+                        como Ipanema, Copacabana o Leblon; su geografía montañosa al pie del océano Atlántico; su
+                        entorno
+                        natural rodeado por el Parque Nacional da Tijuca; su grandioso carnaval y su fascinante
+                        historia,
+                        son algunos de los motivos que hacen de esta ciudad ser llamada de “Cidade Maravilhosa”.</p>
+                    <div class="star-rating">
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-xl-4">
+                    <div id="image-santiago"></div>
+                    <h2>Santiago, Chile</h2>
+                    <div class="card-precio">
+                        <span class="text-title">$499.49</span>
+                        <button id="comprar">
+                            <span>comprar</span>
+                            <svg width="34" height="34" viewBox="0 0 74 74" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="37" cy="37" r="35.5" stroke="black" stroke-width="3"></circle>
+                                <path
+                                    d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z"
+                                    fill="black"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <p>Santiago es la principal ciudad de la Región Metropolitana. Cuenta con más de seis millones de
+                        habitantes y es característica por su avanzado desarrollo a nivel latinoamericano. Con una
+                        arquitectura que mezcla historia con modernidad, Santiago cuenta con las mejores instalaciones
+                        urbanas y con algunas de las principales sedes cívicas del país, como el Palacio de La Moneda,
+                        sede
+                        del gobierno nacional.</p>
+                    <div class="star-rating">
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-xl-4">
+                    <div id="image-amsterdam"></div>
+                    <h2>Amsterdam, Holanda</h2>
+                    <div class="card-precio">
+                        <span class="text-title">$499.49</span>
+                        <button id="comprar">
+                            <span>comprar</span>
+                            <svg width="34" height="34" viewBox="0 0 74 74" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="37" cy="37" r="35.5" stroke="black" stroke-width="3"></circle>
+                                <path
+                                    d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z"
+                                    fill="black"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <p>La capital de los Países Bajos es una ciudad que atrae cada año a una ingente cantidad de
+                        viajeros.
+                        Pequeña en comparación con otras grandes capitales, la realidad es que Ámsterdam es una caja de
+                        sorpresas por lugares como el Canal Ring o por cafés como el Barney's, espacios tan singulares
+                        como
+                        mágicos.</p>
+                    <div class="star-rating">
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-xl-4">
+                    <div id="image-cancun"></div>
+                    <h2>Cancún, México</h2>
+                    <div class="card-precio">
+                        <span class="text-title">$499.49</span>
+                        <button id="comprar">
+                            <span>comprar</span>
+                            <svg width="34" height="34" viewBox="0 0 74 74" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="37" cy="37" r="35.5" stroke="black" stroke-width="3"></circle>
+                                <path
+                                    d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z"
+                                    fill="black"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <p>Con sus playas de fina arena blanca, aguas azul turquesa y espectaculares arrecifes de coral que
+                        yacen frente a sus costas, no es ninguna sorpresa que Cancún sea uno de los destinos turísticos
+                        más
+                        populares de México.</p>
+                    <div class="star-rating">
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-xl-4">
+                    <div id="image-madrid"></div>
+                    <h2>Madrid, España</h2>
+                    <div class="card-precio">
+                        <span class="text-title">$499.49</span>
+                        <button id="comprar">
+                            <span>comprar</span>
+                            <svg width="34" height="34" viewBox="0 0 74 74" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="37" cy="37" r="35.5" stroke="black" stroke-width="3"></circle>
+                                <path
+                                    d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z"
+                                    fill="black"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <p>Los barrios de Madrid están cargados de historia y características peculiares que los hacen
+                        únicos.
+                        ¡Cada zona de Madrid responde a una personalidad! A continuación, te presentamos los barrios más
+                        bonitos de Madrid y qué ver en cada uno de ellos.</p>
+                    <div class="star-rating">
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-xl-4">
+                    <div id="image-roma"></div>
+                    <h2>Roma, Itália</h2>
+                    <div class="card-precio">
+                        <span class="text-title">$499.49</span>
+                        <button id="comprar">
+                            <span>comprar</span>
+                            <svg width="34" height="34" viewBox="0 0 74 74" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="37" cy="37" r="35.5" stroke="black" stroke-width="3"></circle>
+                                <path
+                                    d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z"
+                                    fill="black"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <p>De todas las ciudades históricas de Italia, Roma es la que ejerce la mayor fascinación, ya que
+                        ofrece
+                        todo tipo de ofertas para los turistas bien sea de carácter cultural, turismo y ocio.</p>
+                    <div class="star-rating">
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-xl-4">
+                    <div id="image-miami"></div>
+                    <h2>Miami, Florida</h2>
+                    <div class="card-precio">
+                        <span class="text-title">$499.49</span>
+                        <button id="comprar">
+                            <span>comprar</span>
+                            <svg width="34" height="34" viewBox="0 0 74 74" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="37" cy="37" r="35.5" stroke="black" stroke-width="3"></circle>
+                                <path
+                                    d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z"
+                                    fill="black"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <p>La ciudad tiene un clima caliente todo el año, bellas playas de mar verde azulado, museos,
+                        fiestas y
+                        claro, muchas opciones de compras.</p>
+                    <div class="star-rating">
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-xl-4">
+                    <div id="image-machupicchu"></div>
+                    <h2>Machu Picchu, Perú</h2>
+                    <div class="card-precio">
+                        <span class="text-title">$499.49</span>
+                        <button id="comprar">
+                            <span>comprar</span>
+                            <svg width="34" height="34" viewBox="0 0 74 74" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="37" cy="37" r="35.5" stroke="black" stroke-width="3"></circle>
+                                <path
+                                    d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z"
+                                    fill="black"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <p>Machu Picchu, una de las 7 maravillas del mundo actualmente, es una impresionante ciudadela inca
+                        con
+                        templos, andenes y canales de agua que se ubica en lo más alto de una montaña del Valle del río
+                        Urubamba a 2 360 m.s.n.m.</p>
+                    <div class="star-rating">
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-xl-4">
+                    <div id="image-tokio"></div>
+                    <h2>Tokio, Japón</h2>
+                    <div class="card-precio">
+                        <span class="text-title">$499.49</span>
+                        <button id="comprar">
+                            <span>comprar</span>
+                            <svg width="34" height="34" viewBox="0 0 74 74" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="37" cy="37" r="35.5" stroke="black" stroke-width="3"></circle>
+                                <path
+                                    d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z"
+                                    fill="black"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <p>La ciudad de Tokio (ocho millones y medio) cuenta con 23 barrios y es la zona que concentra los
+                        principales lugares de interés turístico.</p>
+                    <div class="star-rating">
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-xl-4">
+                    <div id="image-elcairo"></div>
+                    <h2>El Cairo, Egipto</h2>
+                    <div class="card-precio">
+                        <span class="text-title">$499.49</span>
+                        <button id="comprar">
+                            <span>comprar</span>
+                            <svg width="34" height="34" viewBox="0 0 74 74" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="37" cy="37" r="35.5" stroke="black" stroke-width="3"></circle>
+                                <path
+                                    d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z"
+                                    fill="black"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <p>Culturalmente El Cairo es posiblemente la ciudad más importante de África. La música egipcia se
+                        exporta por todo el mundo árabe. En el pasado también había en la ciudad una importante
+                        industria
+                        cinematográfica pero ésta ha perdido fuerza en relación con el Bollywood indio.</p>
+                    <div class="star-rating">
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                    </div>
+                </div>
+    </section>
     <script>
         var menuIcon = document.querySelector('.menu-icon');
         var menuMobile = document.querySelector('.menu-mobile');
         var iconClose = document.querySelector('.menu-mobile .icon-close');
 
-        menuIcon.addEventListener('click' , function(){
+        menuIcon.addEventListener('click', function () {
             menuMobile.classList.add('active');
         });
-        iconClose.addEventListener('click' , function(){
+        iconClose.addEventListener('click', function () {
             menuMobile.classList.remove('active');
         });
+        src = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity = "sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin = "anonymous"
     </script>
 </body>
+
 </html>
