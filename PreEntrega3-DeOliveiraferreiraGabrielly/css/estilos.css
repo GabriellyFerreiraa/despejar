@@ -663,6 +663,7 @@ footer {
     /*contactanos*/
     .contacto .contacto-info{
         flex-direction: column-reverse;
+        align-items: center;
     }
     .contacto-info .derecho,
     .contacto-info .izquierdo{
@@ -670,5 +671,13 @@ footer {
     }
     .contacto-info .derecho{
         margin-bottom: 30px;
+    }
+    .contacto-info .contacto-despejar{
+        width: 50%;
+        padding: 30px;
+        background-color: #7ECA9C;
+        margin-right: 0;
+        border-radius: 14px;
+        height: fit-content;
     }
 }
