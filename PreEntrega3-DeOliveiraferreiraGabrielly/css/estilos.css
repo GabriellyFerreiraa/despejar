@@ -624,6 +624,7 @@ footer {
         margin-top: 10px;
         padding: 0 20px;
         order: 1;
+        width: 100%;
     }
     .mas-info .mas-info-texto h3{
         font-size: 48px;
