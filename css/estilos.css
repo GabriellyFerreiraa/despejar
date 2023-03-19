@@ -177,62 +177,6 @@ nav .menu-icon {
   transition: 100ms;
 }
 
-.servicios h3 {
-  text-align: center;
-}
-.servicios .container p {
-  text-align: center;
-}
-.servicios .row-cards {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-  flex-wrap: wrap;
-}
-.servicios .row-cards .row-card-item {
-  background-color: #7ECA9C;
-  width: 350px;
-  padding: 20px;
-  border-radius: 14px;
-  margin: 20px;
-}
-.servicios .row-cards .row-card-item:hover {
-  background-color: #CCFFBD;
-}
-.servicios .row-cards .row-card-item img {
-  background-color: #40394A;
-  border-radius: 14px;
-  width: 70px;
-  padding: 9px;
-}
-
-.datos {
-  background-color: whitesmoke;
-}
-.datos .container {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-}
-.datos .datos-item {
-  text-align: center;
-  margin: 15px;
-  color: #40394A;
-}
-.datos .datos-item img {
-  background-color: #7ECA9C;
-  border-radius: 14px;
-  padding: 10px;
-  margin-bottom: 15px;
-  width: 80px;
-}
-.datos .datos-item p {
-  font-size: 18px;
-}
-.datos .datos-item p strong {
-  font-size: 28px;
-}
-
 /*inicio*/
 .mas-info .container {
   display: flex;
@@ -332,6 +276,26 @@ footer {
   padding: 10px;
 }
 
+@media (max-width: 900px) {
+  .banner {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .banner .texto {
+    margin: 150px;
+    padding: 0 90px;
+  }
+  .banner .texto .titulo {
+    color: #fff;
+    font-size: 35px;
+  }
+  .banner .texto .subtitulo {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 0;
+  }
+}
 /*contactanos*/
 header .banner h1 {
   font-size: 50px;
@@ -656,15 +620,60 @@ textarea {
     width: 100%;
   }
 }
-.banner .texto {
-  padding: 0;
-  margin: 80px;
+.servicios h3 {
+  text-align: center;
 }
-.banner .texto h1 {
-  font-size: 80px;
+.servicios .container p {
+  text-align: center;
 }
-.banner .texto p {
-  font-size: 15px;
+.servicios .row-cards {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+.servicios .row-cards .row-card-item {
+  background-color: #7ECA9C;
+  width: 350px;
+  padding: 20px;
+  border-radius: 14px;
+  margin: 20px;
+}
+.servicios .row-cards .row-card-item:hover {
+  background-color: #CCFFBD;
+}
+.servicios .row-cards .row-card-item img {
+  background-color: #40394A;
+  border-radius: 14px;
+  width: 70px;
+  padding: 9px;
+}
+
+.datos {
+  background-color: whitesmoke;
+}
+.datos .container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.datos .datos-item {
+  text-align: center;
+  margin: 15px;
+  color: #40394A;
+}
+.datos .datos-item img {
+  background-color: #7ECA9C;
+  border-radius: 14px;
+  padding: 10px;
+  margin-bottom: 15px;
+  width: 80px;
+}
+.datos .datos-item p {
+  font-size: 18px;
+}
+.datos .datos-item p strong {
+  font-size: 28px;
 }
 
 /*sobre nosotros*/
