@@ -633,7 +633,7 @@ footer {
         font-size: 48px;
     }
     .mas-info .container .mas-info-img .img-info{
-        width: 300px;
+        width: 100%;
     }
     .mas-info .mas-info-texto,
     .mas-info .mas-info-img{
