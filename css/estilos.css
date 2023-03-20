@@ -353,9 +353,10 @@ header .banner h1 {
 }
 
 form {
-  width: 50%;
+  width: 100%;
   margin: 0 auto;
   padding: 2rem;
+  display: contents;
 }
 
 .form-group {
@@ -462,7 +463,7 @@ textarea {
 }
 @media only screen and (max-width: 480px) {
   .search-container {
-    padding: 0.5rem;
+    padding: 1rem;
   }
   .search-container input[type=text] {
     font-size: 12px;
