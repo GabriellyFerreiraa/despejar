@@ -24,6 +24,7 @@
             font-size: 14px;
         }
     }
+
 }
 @media only screen and (max-width: 480px){
     .search-container {
@@ -31,6 +32,9 @@
         input[type="text"] {
             font-size: 12px;
         }
+    }
+    .container-text-center{
+        padding: 10px;
     }
 }
 #image-new-york{

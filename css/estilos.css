@@ -333,6 +333,7 @@ footer {
   }
   .mas-info .container {
     flex-direction: column;
+    padding: 10px;
   }
   .mas-info .container .mas-info-texto {
     margin-top: 10px;
@@ -468,6 +469,9 @@ textarea {
   }
   .search-container input[type=text] {
     font-size: 12px;
+  }
+  .container-text-center {
+    padding: 10px;
   }
 }
 #image-new-york {
