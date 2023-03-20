@@ -169,7 +169,7 @@ nav{
         width: 50%;
         padding: 0 40px;
         h3{
-            font-size: 48px;
+            font-size: 30px;
         }
         p{
             margin: 5px 0 10px 0;
@@ -258,6 +258,7 @@ footer {
         display: flex;
         justify-content: center; 
         text-align: center; 
+        overflow: overlay;
         .texto{
             margin: 150px;
             padding: 0 90px;
