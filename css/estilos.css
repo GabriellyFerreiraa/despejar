@@ -355,10 +355,9 @@ header .banner h1 {
 }
 
 form {
-  width: 100%;
+  width: 70%;
   margin: 0 auto;
-  padding: 2rem;
-  display: contents;
+  padding: 20px;
 }
 
 .form-group {
