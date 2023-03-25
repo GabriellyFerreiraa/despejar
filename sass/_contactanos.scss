@@ -67,11 +67,14 @@ textarea {
         width: 100%;
         .contacto-despejar{
             width: 100%;
-            padding: 30px;
+            padding: 10px;
             background-color: #7ECA9C;
             margin-right: 0;
             border-radius: 14px;
             height: fit-content;
+        }
+        .mapa{
+            display: contents;
         }
     }
 }

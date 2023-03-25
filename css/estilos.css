@@ -427,11 +427,14 @@ textarea {
   }
   .contacto .contacto-info .contacto-despejar {
     width: 100%;
-    padding: 30px;
+    padding: 10px;
     background-color: #7ECA9C;
     margin-right: 0;
     border-radius: 14px;
     height: fit-content;
+  }
+  .contacto .contacto-info .mapa {
+    display: contents;
   }
 }
 .search-container {
