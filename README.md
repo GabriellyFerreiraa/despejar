@@ -2,7 +2,7 @@
 
 Multi-page website for a travel agency, featuring Home, Pricing, Services, About and Contact pages, a responsive menu, and styles organized with SASS.
 
-🔗 **Live demo:** [add the link here after publishing on GitHub Pages]
+🔗 **Live demo:** [https://gabriellyferreiraa.github.io/despejar/]
 
 ![Project screenshot](img/screenshot.png)
 <!-- Replace with a real screenshot of the homepage -->
