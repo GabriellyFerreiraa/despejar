@@ -2,7 +2,7 @@
 
 Site institucional de uma agência de viagens fictícia, com múltiplas páginas (Início, Preços, Serviços, Sobre e Contato), menu responsivo e estilos organizados com SASS.
 
-🔗 **Demo ao vivo:** [coloque aqui o link depois de publicar no GitHub Pages]
+🔗 **Demo ao vivo:** [https://gabriellyferreiraa.github.io/despejar/]
 
 ![Screenshot do projeto](img/screenshot.png)
 <!-- Troque pelo print real da página inicial -->
